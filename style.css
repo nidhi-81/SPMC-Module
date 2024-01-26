@@ -1,0 +1,121 @@
+html {scroll-behavior: smooth;}
+*{box-sizing: border-box;outline: none; transition: all .3s;-o-transition: all .3s;-webkit-transition: all .3s;-ms-transition: all .3s;}
+
+body{font-size: 14px;}
+h1, h2, h3, h4 , h5, h6, strong{font-weight: 700;}
+a{color: black;line-height: initial;}
+a:hover{color:initial; text-decoration:none}
+p{color: black;}
+p:last-child{margin: 0}
+label{font-size: 12px;margin-bottom: 5px;text-transform: uppercase;}
+img, iframe{max-width: 100%; vertical-align: middle;}
+ul{padding-left: 16px;margin: 0;}
+ul li{color: black;}
+input, textarea, select{border-radius: 0;border: 1px solid rgb(199 199 199);font-size: 14px;height: initial;padding: 8px 10px;width: 100%;background: #fff}
+input[type=submit], button{width:auto; border:0; cursor:pointer}
+textarea{height:100px;}
+video{width: 100%; vertical-align: middle;}
+hr{width: 100%; float: left;}
+.btn-primary{background: #eb2125;border: 0;font-size: 12px;padding: 10px 20px;}
+.btn-primary:hover{background: #000}
+
+.owl-nav{position: absolute;left: 0;top: 50%;width: 100%;}
+.owl-nav button{}
+.owl-nav button i{text-align: center;display: block;font-size: 40px;padding: 0px;transition: all .2s;}
+.owl-nav button i:hover{color:red}
+.owl-nav button.owl-prev{position: absolute;left: -40px;}
+.owl-nav button.owl-next{position: absolute;right: -40px;}
+
+.owl-dots{position: absolute;bottom: 10px;width: 100%;text-align: center;display: none;}
+.owl-dots button{margin: 0 5px;}
+.owl-dots button span{width: 14px;height: 14px;display: block;background: whitesmoke;border-radius: 5px;}
+.owl-dots button.active{}
+.owl-dots button.active span{background: #EB2125;}
+.owl-dots button span:hover{background: #023575;}
+.owl-carousel .owl-stage, .owl-carousel.owl-drag .owl-item{ -ms-touch-action: auto; touch-action: auto;}
+
+.container-fluid{}
+.bg-light{background: #f8faff!important}
+
+.topbar{background:black;}
+.topbar .right a{padding: 5px 10px;background: #EB2125;border-radius: 5px;display: inline-block;}
+.topbar *{color:#fff}
+.topbar .top-social{}
+.topbar .top-social a{margin-right: 10px}
+.topbar .top-social img{height: 25px}
+
+header{}
+header h1{color:#EB2125;line-height: 1;}
+header p{font-weight:bold; font-size:20px;}
+header .middle{}
+header .middle img{height: 65px;border: 1px solid #dadada;border-radius: 5px;margin: 0 5px;padding: 6px;}
+
+nav{background:#EB2125}
+nav .fa-bars{font-size: 30px;}
+nav .fa-bars.x:before{content: '\f00d';}
+nav *{color:#fff}
+nav ul{padding: 0;list-style: none;display: flex;}
+nav ul li{flex: 1 1 auto;text-align: center;position: relative;}
+nav ul li a{display: block;padding: 15px 5px;}
+nav ul li.zero > a:after, nav ul li.two > a:after{content:'\f107';font-family: 'FontAwesome';padding-left: 5px;}
+
+nav ul ul, nav ul ul ul{display: none;}
+nav ul ul ul{display:none!important}
+
+nav ul ul a{color:#000;text-align:left;padding: 10px 10px;border-bottom: 1px solid #d4d4d4;}
+nav ul ul a:hover{background:whitesmoke; color:#EB2125}
+nav .zero:hover ul{display:block;position: absolute;left: 0;top: 45px;background: #fff;z-index: 9;width: 200px;}
+
+nav .one li:hover ul{display:block!important;top: initial;bottom: 0;left: 195px;}
+
+.box{}
+.box h4{margin:0}
+.box .border:hover{background: #EB2125}
+.box .border:hover h4{color: #fff}
+
+.intro h2, .intro h4{color:#EB2125}
+.intro h4{margin:0}
+
+.notice{}
+.notice h2{background:#EB2125;color: #fff;text-align: center;font-size: 22px;padding: 10px 0;margin: 0;}
+.notice .border{min-height:350px;}
+.notice ul{padding: 0;list-style: none;}
+.notice ul li{margin-bottom: 15px;position: relative;}
+.notice ul li span{background: #000;color: #fff;padding: 3px;position: absolute;right: 0;bottom: 0;font-size: 11px;}
+
+.testimonial{}
+.testimonial .content{margin: 15px 0px;}
+.testimonial .content p{background: #fff;padding: 15px;font-size: 14px;}
+.testimonial .content:after{content:'\f10d';display: block;position: absolute;left: 20px;top: -10px;font-size: 30px;font-family: 'FontAwesome';color: #eb2125;}
+.testimonial img{width: 50px!important;height: 50px!important;border-radius: 50%;float: left;margin-right: 30px;}
+.testimonial h4{margin: 0}
+.testimonial h5{font-weight: 500;font-size: 14px;}
+
+.footer-top{background: #232323!important;}
+.footer-top ul li{color:#eb2125!important;margin-bottom: 5px;}
+.footer-top ul li a{color:#fff!important}
+.footer-top h6{color: #fff}
+
+.social{margin-top: 40px}
+.social a{margin-right: 15px}
+.social img{height: 35px}
+
+footer{background: #eb2125;text-align: center;}
+footer p{color: #fff; margin:0!important}
+
+@media(max-width: 1200px){
+	nav ul{display: none;}
+	nav ul.main{position: fixed;right:0;top:0;background: #fff;height: 100vh;width: 280px;z-index: 9;overflow-x: scroll;border-left: 1px solid #d5d5d5;}
+	nav ul.main *{color:#000;text-align:left;}
+	nav ul.main a{padding: 8px 5px;}
+	nav ul ul, nav ul ul ul, nav .zero:hover ul, nav .one li:hover ul{display:block;background: whitesmoke;position: initial;width: 100%;padding-left: 20px;}
+}
+
+@media(max-width:767px){
+	.topbar a{font-size: 12px;margin: 2px 0px;}
+}
+
+@media(max-width:575px){
+	header h1{font-size: 28px;}
+	header .middle img{height: 50px;margin: 0 0px;}
+}
